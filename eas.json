@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 13.2.3",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "API_URL": "http://localhost:3000/",
+        "SOMETHING_SECRET": "Some_Secret_Value"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
